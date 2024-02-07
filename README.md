@@ -1,4 +1,4 @@
-# :coin: Full Stack Bank :dollar:
+# :coin: Full Stack Bank II :dollar:
 
 ![Preview](./screenshots/login.png)
 
