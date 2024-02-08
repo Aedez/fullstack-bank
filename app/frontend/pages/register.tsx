@@ -93,7 +93,7 @@ export default function Register() {
               name="username"
               value={username}
               onChange={handleChange}
-              placeholder="Nome de usuário"
+              placeholder="Username"
               onFocus={() => handleFocus('username')}
               onBlur={() => handleFocus('')}
             />
@@ -109,7 +109,7 @@ export default function Register() {
               name="password"
               value={password}
               onChange={handleChange}
-              placeholder="Senha"
+              placeholder="Password"
               onFocus={() => handleFocus('password')}
               onBlur={() => handleFocus('')}
             />
@@ -127,14 +127,14 @@ export default function Register() {
             type="submit"
             disabled={disableButton()}
           >
-            ENVIAR
+            LOG IN
           </button>
         </form>
 
         <Modal
           display={displayModal}
-          message="Usuário criado com sucesso!"
-          buttonMessage="ENTRAR"
+          message="User created successfully!"
+          buttonMessage="ENTER"
           handleClick={() => router.push('/')}
         />
       </main>
