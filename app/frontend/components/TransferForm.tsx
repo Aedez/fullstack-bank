@@ -59,7 +59,7 @@ export default function TransferForm({
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.section__title}>Transferir</h2>
+      <h2 className={styles.section__title}>Transfer</h2>
       <form className={styles.form} action="POST" onSubmit={handleSubmit}>
         <div className={styles['form__input-container']}>
           <input
