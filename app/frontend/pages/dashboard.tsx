@@ -70,7 +70,7 @@ export default function Dashboard() {
       </Head>
 
       <header className={styles.header}>
-        <h1>{`Olá @${username}`}</h1>
+        <h1>{`Hello @${username}`}</h1>
         <button type="button" title="Sair" onClick={handleLogout}>
           <MdLogout />
         </button>
@@ -79,7 +79,7 @@ export default function Dashboard() {
       <main className={styles.main}>
         <section className={styles.balance}>
           <div className={styles.balance__label}>
-            <h2>Saldo disponível:</h2>
+            <h2>Available Balance:</h2>
             <button type="button" title="Atualizar" onClick={() => handleUpdateBalance(token)}>
               <GrUpdate />
             </button>
