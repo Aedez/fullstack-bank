@@ -39,7 +39,7 @@ export default function TransactionsList({
           break;
 
         case StatusCodes.UNAUTHORIZED:
-          setErrorMessage('Seu login expirou');
+          setErrorMessage('Your login has expired');
           break;
 
         default:
@@ -69,7 +69,7 @@ export default function TransactionsList({
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.section__title}>Histórico</h2>
+      <h2 className={styles.section__title}>History</h2>
       {!!errorMessage && (
         <p className={styles['form__error-message']}>{errorMessage}</p>
       )}
@@ -81,7 +81,7 @@ export default function TransactionsList({
             onSubmit={handleUpdateList}
           >
             <label className={styles['form__input-label']} htmlFor="type">
-              <span>Tipo:</span>
+              <span>Type:</span>
               <div className={styles['form__input-container']}>
                 <select
                   name="type"
@@ -89,15 +89,15 @@ export default function TransactionsList({
                   id="type"
                   onChange={handleChange}
                 >
-                  <option value="">Todas</option>
-                  <option value="cashout">Enviadas</option>
-                  <option value="cashin">Recebidas</option>
+                  <option value="">All</option>
+                  <option value="cashout">Sent</option>
+                  <option value="cashin">Received</option>
                 </select>
               </div>
             </label>
             <section className={styles['form__date-filters']}>
               <label className={styles['form__input-label']} htmlFor="from">
-                <span>De:</span>
+                <span>From:</span>
                 <div className={styles['form__input-container']}>
                   <input
                     type="date"
@@ -109,7 +109,7 @@ export default function TransactionsList({
                 </div>
               </label>
               <label className={styles['form__input-label']} htmlFor="to">
-                <span>até:</span>
+                <span>To:</span>
                 <div className={styles['form__input-container']}>
                   <input
                     type="date"
@@ -122,7 +122,7 @@ export default function TransactionsList({
               </label>
             </section>
             <button className={styles.form__button} type="submit">
-              APLICAR
+              SUBMIT
             </button>
           </form>
           <ul className={styles.list}>
@@ -145,9 +145,9 @@ export default function TransactionsList({
                     </span>
                     <div className={styles.list__info}>
                       <strong>
-                        Transação
+                        Transactions
                         {' '}
-                        {debitedUSer === username ? 'enviada' : 'recebida'}
+                        {debitedUSer === username ? 'Sent' : 'Received'}
                       </strong>
                       <div>
                         <p>
