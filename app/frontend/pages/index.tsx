@@ -91,7 +91,7 @@ export default function Home() {
               name="username"
               value={username}
               onChange={handleChange}
-              placeholder="Nome de usuário"
+              placeholder="Username"
               onFocus={() => handleFocus('username')}
               onBlur={() => handleFocus('')}
             />
@@ -107,7 +107,7 @@ export default function Home() {
               name="password"
               value={password}
               onChange={handleChange}
-              placeholder="Senha"
+              placeholder="Password"
               onFocus={() => handleFocus('password')}
               onBlur={() => handleFocus('')}
             />
@@ -125,14 +125,14 @@ export default function Home() {
             type="submit"
             disabled={disableButton()}
           >
-            ENVIAR
+            LOG IN
           </button>
           <button
             type="button"
             className={styles.form__button}
             onClick={() => router.push('/register')}
           >
-            CRIAR CONTA
+            CREATE AN ACCOUNT
           </button>
         </form>
       </main>
